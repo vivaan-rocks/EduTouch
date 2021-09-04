@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style100.css">
 </head>
 <body>
+       <section id="banner">        <h1 class="logo">EduTouch</h1>        <div class="banner-text">            <h1>EduTouch</h1>            <p>My Body , My Rules</p>            <div class="banner-btn">                <!--<a href="find.html"><span></span>Find Out</a>                <a href="#feature"><span></span>Read More</a>-->            </div>        </div>    </section>    <div id="sideNav">        <nav>            <ul>                <li><a href="index.html">HOME</a></li>                <li><a href="index.html#services">VIDEOS</a></li>                <li><a href="index.html#feature">ABOUT</a></li>                <li><a href="log.html">CONTACT US</a></li>            </ul>        </nav>    </div>    <div id="menuBtn" >        <img src="menu.png" id="menu">    </div>
     <center>
         <div class="title">
             <h1>Contact Us</h1>
@@ -25,5 +26,23 @@
             </form>
         </div>
     </center>
+                                                                                    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+               sideNav.style.right = "0";
+               menu.src = "close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+    </script>
 </body>
 </html>
